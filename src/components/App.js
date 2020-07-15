@@ -6,14 +6,14 @@ import Footer from './Footer';
 
 import './App.css';
 
-function App(props) {
+const App = (props) => {
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
       <Header />
       <ChatStream />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

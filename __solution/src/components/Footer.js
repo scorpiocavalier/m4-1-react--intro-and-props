@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import "./Footer.css";
+import './Footer.css';
 
-function Footer(props) {
+const Footer = (props) => {
   return (
     <footer>
-      <input className="message-input" />
+      <input className='message-input' />
     </footer>
   );
-}
+};
 
 export default Footer;

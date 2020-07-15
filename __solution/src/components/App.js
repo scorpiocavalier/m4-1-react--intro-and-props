@@ -6,9 +6,9 @@ import Footer from './Footer';
 
 import './App.css';
 
-function App(props) {
+const App = (props) => {
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
       <Header
         currentUser={props.currentUser}
         participants={props.conversation.participants}
@@ -20,6 +20,6 @@ function App(props) {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

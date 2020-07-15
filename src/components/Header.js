@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import "./Header.css";
+import './Header.css';
 
-function Header(props) {
+const Header = (props) => {
   return <header>{/* Your code here! */}</header>;
-}
+};
 
 export default Header;

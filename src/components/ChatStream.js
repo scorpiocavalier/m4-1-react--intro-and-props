@@ -10,8 +10,8 @@ import './ChatStream.css';
 // - a text color of #000
 // - a background color of #e9e9eb
 
-function ChatStream(props) {
-  return <section className="chat-stream">{/* Your code here! */}</section>;
-}
+const ChatStream = (props) => {
+  return <section className='chat-stream'>{/* Your code here! */}</section>;
+};
 
 export default ChatStream;

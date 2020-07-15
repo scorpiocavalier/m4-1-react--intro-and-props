@@ -4,10 +4,10 @@ import ChatMessage from './ChatMessage';
 
 import './ChatStream.css';
 
-function ChatStream(props) {
+const ChatStream = (props) => {
   return (
-    <div className="chat-stream">
-      {props.messages.map(message => (
+    <div className='chat-stream'>
+      {props.messages.map((message) => (
         <ChatMessage
           messageType={message.user === props.currentUser ? 'sent' : 'received'}
           message={message}
@@ -15,6 +15,6 @@ function ChatStream(props) {
       ))}
     </div>
   );
-}
+};
 
 export default ChatStream;
