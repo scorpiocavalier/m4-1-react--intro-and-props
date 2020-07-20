@@ -110,7 +110,7 @@ We can also see that we import an `App.css`, which adds a bit of styling:
 }
 ```
 
-Right now, our application doesn't do much. Your job will be to take the props given to `App` - `currentUser` and `conversation` - and render out the appropriate things!
+Right now, our application doesn't do much. Your job will be to take the props given to `App` - `currentUser` and `conversation` - and render out the appropriate things! YOU GOT THIS!
 
 ---
 
