@@ -1,5 +1,6 @@
 import React from 'react'
 import './ChatStream.css'
+import ChatMessage from './ChatMessage'
 
 // The current user's messages should have:
 // - a text color of #FFF
@@ -10,11 +11,12 @@ import './ChatStream.css'
 // - a background color of #e9e9eb
 
 const ChatStream = ({ messages }) => {
-  console.log('chatstream', messages)
   return (
     <section className='chat-stream'>
       {
-        messages.map(({ id, body, timestamp }) => body)
+        messages.map(message => {
+          return <ChatMessage key={ message.id } message={message} />
+        })
       }
     </section>)
 }
