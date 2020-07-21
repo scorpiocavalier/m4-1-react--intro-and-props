@@ -9,7 +9,7 @@ import './App.css'
 const App = ({ currentUser, conversation: { messages } }) => {
   return (
     <div className='wrapper'>
-      <Header />
+      <Header currentUser={currentUser} />
       <ChatStream currentUser={ currentUser } messages={messages} />
       <Footer />
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Avatar from './Avatar'
 import './ChatMessage.css'
 
 const ChatMessage = ({
@@ -12,7 +13,7 @@ const ChatMessage = ({
       {
         !isCurrentUser &&
         <div className="avatar-container">
-          <img className='avatar' src={avatar} alt={username} />
+          <Avatar avatar={avatar} username={username} size="avatar-sm" />
         </div>
       }
 
