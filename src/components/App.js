@@ -10,7 +10,7 @@ const App = ({ currentUser, conversation: { messages } }) => {
   return (
     <div className='wrapper'>
       <Header />
-      <ChatStream messages={messages} />
+      <ChatStream currentUser={ currentUser } messages={messages} />
       <Footer />
     </div>
   )
