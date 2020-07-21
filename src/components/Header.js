@@ -8,7 +8,7 @@ const getParticipantAvatars = currentUser => {
   for (const user in users) {
     const { username, avatar } = users[user]
     if (currentUser.username !== username)
-      participants.push(<Avatar avatar={avatar} username={username} size="avatar-md" />)
+      participants.push(<Avatar key={Math.random()} avatar={avatar} username={username} size="avatar-md" />)
   }
   return participants
 }
