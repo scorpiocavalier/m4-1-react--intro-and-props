@@ -26,14 +26,19 @@ const DisplayName = styled.span`
   font-weight: 600;
 `
 
-const MessageBody = styled.p`
+const MessageBody = styled.p.attrs(props => ({
+  currenUserColor: "#fff",
+  participantColor: "#000",
+  currenUserBgColor: "#1185f7",
+  participantBgColor: "#e9e9eb"
+}))`
   font-size: 16px;
   font-weight: 700;
   padding: 10px;
   margin: 0;
   border-radius: 10px;
-  color: ${({isCurrentUser}) => isCurrentUser ? "#fff" : "#000"};
-  background-color: ${({ isCurrentUser }) => isCurrentUser ? "#1185f7" : "#e9e9eb"};
+  color: ${props => props.isCurrentUser ? props.currenUserColor : props.participantColor};
+  background-color: ${props => props.isCurrentUser ? props.currenUserBgColor : props.participantBgColor};
 `
 
 const ChatMessage = ({
