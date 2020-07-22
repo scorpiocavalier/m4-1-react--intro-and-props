@@ -1,18 +1,23 @@
 import React from 'react'
-
+import styled from 'styled-components'
 import Header from './Header'
 import ChatStream from './ChatStream'
 import Footer from './Footer'
 
-import './App.css'
+const Wrapper = styled.div`
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
 
 const App = ({ currentUser, conversation: { messages } }) => {
   return (
-    <div className='wrapper'>
+    <Wrapper>
       <Header currentUser={currentUser} />
       <ChatStream currentUser={ currentUser } messages={messages} />
       <Footer />
-    </div>
+    </Wrapper>
   )
 }
 
